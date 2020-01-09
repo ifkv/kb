@@ -94,6 +94,7 @@ class HelpCenterIndex extends React.Component {
                 >
                   {icon}
                 </div>
+                
                 <div sx={{ flex: "6", px: [2, 0] }}>
                   <header>
                     <h3

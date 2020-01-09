@@ -4,7 +4,7 @@ module.exports = {
     author: `Dominik Ferber`,
     // You'd normally use a description like
     // "Advice and answers by the MyCompany-Team"
-    description: `Чем мы можем помочь вам сегодня?`,
+    description: `Чем мы можем помочь вам?`,
     siteUrl: `https://help.dferber.de/`,
     language: "ru",
     texts: {
@@ -15,7 +15,7 @@ module.exports = {
       writtenByText: "Автор:",
       articlesInCollectionZeroText: "статей в этом разделе",
       articlesInCollectionOneText: "статья в этом разделе",
-      articlesInCollectionTwoText: "статей в этом разделе",
+      articlesInCollectionTwoText: "статьи в этом разделе",
       articlesInCollectionMultipleText: "статей в этом разделе",
     },
   },

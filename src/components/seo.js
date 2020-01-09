@@ -36,7 +36,7 @@ function SEO(props) {
       // and https://github.com/nfl/react-helmet/issues/315
       defer={false}
       htmlAttributes={{
-        lang: props.lang || site.siteMetadata.language || "en",
+        lang: props.lang || site.siteMetadata.language || "ru",
       }}
       title={props.title}
       titleTemplate={

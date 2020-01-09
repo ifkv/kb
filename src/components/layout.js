@@ -298,6 +298,8 @@ class Layout extends React.Component {
           </main>
         </div>
         <footer>
+          <script src="https://s3.eu-central-1.amazonaws.com/cdn.aihelps.com/Denta/head-helpcrunch.js"></script>
+          <script src="https://s3.eu-central-1.amazonaws.com/cdn.aihelps.com/Denta/footer-helpcrunch.js"></script>
           
           
         </footer>
