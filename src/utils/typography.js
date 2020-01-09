@@ -1,8 +1,8 @@
 import Typography from "typography"
 // import Wordpress2016 from "typography-theme-wordpress-2016"
-import moragaTheme from "typography-theme-moraga"
+import githubTheme from "typography-theme-github"
 
-moragaTheme.overrideThemeStyles = () => {
+githubTheme.overrideThemeStyles = () => {
   return {
     li: {
       marginBottom: `calc(1.56rem / 8)`,
@@ -34,9 +34,9 @@ moragaTheme.overrideThemeStyles = () => {
 }
 
 // delete Wordpress2016.googleFonts
-delete moragaTheme.googleFonts
+delete githubTheme.googleFonts
 
-const typography = new Typography(moragaTheme)
+const typography = new Typography(githubTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

@@ -1,22 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Free Help Center`,
+    title: `AI Helps Support`,
     author: `Dominik Ferber`,
     // You'd normally use a description like
     // "Advice and answers by the MyCompany-Team"
-    description: `Get a free self-hosted Help Center like this one`,
+    description: `Чем мы можем помочь вам сегодня?`,
     siteUrl: `https://help.dferber.de/`,
-    language: "en",
+    language: "ru",
     texts: {
-      allCollectionsText: "All Collections",
-      searchPlaceholderText: "Search for answers…",
-      lastModifiedText: "Last edited",
-      publishedOnText: "Published on",
-      writtenByText: "Written by",
-      articlesInCollectionZeroText: "articles in this collection",
-      articlesInCollectionOneText: "article in this collection",
-      articlesInCollectionTwoText: "articles in this collection",
-      articlesInCollectionMultipleText: "articles in this collection",
+      allCollectionsText: "Все разделы",
+      searchPlaceholderText: "Введите ваш вопрос…",
+      lastModifiedText: "Отредактировано",
+      publishedOnText: "Опубликовано",
+      writtenByText: "Автор:",
+      articlesInCollectionZeroText: "статей в этом разделе",
+      articlesInCollectionOneText: "статья в этом разделе",
+      articlesInCollectionTwoText: "статей в этом разделе",
+      articlesInCollectionMultipleText: "статей в этом разделе",
     },
   },
   mapping: {
@@ -28,6 +28,8 @@ module.exports = {
     `gatsby-transformer-yaml`,
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-simple-analytics",
+    "gatsby-remark-embed-video",
+    "gatsby-remark-responsive-iframe",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -54,6 +56,22 @@ module.exports = {
       options: {
         plugins: [
           {
+        resolve: "gatsby-remark-embed-video",
+        options: {
+          width: 800,
+          ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+          height: 400, // Optional: Overrides optional.ratio
+          related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+          noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+          urlOverrides: [
+            {
+              id: 'youtube',
+              embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
+            }
+          ] //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
+        }
+        },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -73,12 +91,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -99,4 +117,5 @@ module.exports = {
       },
     },
   ],
+
 }

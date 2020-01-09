@@ -23,9 +23,9 @@
 #         - file: ../content/whales/index.md
 
 - id: introduction
-  title: Introduction
+  title: Начало работы
   description: Brief overview of the free help center
-  icon: "FaRegHandPeace"
+  icon: "FaCompass"
   articles:
     - file: ../content/welcome/index.md
 

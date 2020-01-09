@@ -1,7 +1,7 @@
 export default {
   colors: {
     text: "#333",
-    headerBackground: "#607d8b",
+    headerBackground: "#2A68F6",
     headerText: "white",
     paperBackgroundColor: "white",
     paperHoverBackgroundColor: "#fcfcfc",
@@ -35,7 +35,7 @@ export default {
   fonts: {
     body: "system-ui, sans-serif",
     heading: "system-ui, sans-serif",
-    monospace: "Menlo, monospace",
+    monospace: "system-ui, monospace",
   },
   fontWeights: {
     body: 400,

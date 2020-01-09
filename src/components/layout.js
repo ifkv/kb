@@ -297,44 +297,9 @@ class Layout extends React.Component {
             {children}
           </main>
         </div>
-        <footer
-          sx={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(30),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            textAlign: "center",
-            color: "footerTextColor",
-            fontSize: 1,
-          }}
-        >
-          <Logo color="currentColor" size="36px" />
-          <div sx={{ mt: 2 }}>
-            Built with
-            {` `}
-            {/*
-              PLEASE DO NOT REMOVE THIS LINK.
-
-              A lot of unpaid time is spent on making and maintaining the 
-              center. Nothing is expected in return. Keeping this link here
-              is the only small thing asked in return. So please don't remove it.
-
-              You are amazing for keeping it here, thank you.
-            */}
-            <a
-              href="https://help.dferber.de"
-              target="_blank"
-              sx={{
-                color: "footerTextColor",
-                textDecoration: "underline",
-                "&:hover": {
-                  color: "footerTextHoverColor",
-                },
-              }}
-            >
-              Dom's Help Center
-            </a>
-          </div>
+        <footer>
+          
+          
         </footer>
       </div>
     )
